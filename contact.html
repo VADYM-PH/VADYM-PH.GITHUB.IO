@@ -1,0 +1,98 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	</head>
+    
+<body >
+     <header  class="header">
+        <div class="container">
+            <div class="header__inner"> 
+                <div class="user">
+                    <div class="user__avatar">
+                       <a href="index.html"><img src="img/avatar1.jpg" alt="" ></a>
+                    </div>
+                    <div class="user__content">
+                        <div class="user__name">Vadym Yablonskyi</div>
+                        <div class="user__profi">photographer</div>
+                    </div>
+                    
+                </div>
+                <nav class="nav" id="nav">
+                    <a class="nav__link" href="portfolio.html">work</a>
+                    <a class="nav__link" href="index.html">about me</a>
+                    <a class="nav__link" href="contact.html">contact</a>
+                    
+                </nav>
+                <button class="burger" type="button" id="navToggle">
+                    <img class="burger_icon" src="img/menu.svg" id="ui" >
+                </button>
+            </div>
+        </div>
+    </header>
+    
+     <main class="main">
+            <div class="content">
+                <section class="ku" id="blog" >
+					
+                    <div class="dark-overlay vision">
+                        <div class="centered vision-border wow bounceIn">
+                            <h4>+380989055916</h4>
+                            <h2 class="title"><a href="index.html">VADYM-PH.GITHUB.IO</a></h2>
+                            <h6>
+                                Home / Контакти </h6>
+                        </div>
+                    </div>
+                </section>
+                <h3>КОНТАКТИ</h3>
+                <div class="contacts">
+                                       <button class="text_contacts" ><img src="img/Viber.svg" align="center"><a href="tel:+380989055916"> +380989055916 </a></button>
+                     <button class="text_contacts" ><img src="img/Facebook.svg" align="center"><a href="https://www.facebook.com/profile.php?id=100017173307373"  target="_blank"> Вадим Яблонський </a></button>
+                     <button class="text_contacts" ><img src="img/Instagram.svg" align="center"><a href="https://instagram.com/_vadym_594_?utm_medium=copy_link" target="_blank"> @_vadym_594_ </a></button>
+                     <button class="text_contacts" ><img src="img/Telegram.svg" align="center"><a href="https://t.me/vadym594" target="_blank"> @vadym594 </a></button>
+                     <button class="text_contacts" ><img src="img/gmail.svg" align="center"><a href="mailto:vadymyablonskyi@gmail.com" target="_blank" > vadymyablonskyi@gmail.com </a></button>
+                     
+                </div>
+         </div>
+        </main> 
+  
+    
+    
+    
+    <script>
+        $(function(){
+         const navToggle = $ ("#navToggle");
+          const nav = $ ("#nav");
+            let x=true;
+        navToggle.on("click", function(event) {        
+            event.preventDefault();
+        nav.toggleClass("show");
+           
+            if (x){ 
+         document.getElementById("ui").src='img/exit.svg';
+            }
+          else {
+         document.getElementById("ui").src='img/menu.svg';
+            }
+            x=!x;
+                    });
+        
+        });
+         function ibg(){
+                $.each($('.ibg'),function(index, val){
+                    if($(this).find('img').length>0){
+                        $(this).css('background-image', 'url("'+$(this).find('img').attr('src')+'")');
+            }
+               });
+            }
+        ibg();
+    </script>
+   
+    
+    
+	</body>
+</html>

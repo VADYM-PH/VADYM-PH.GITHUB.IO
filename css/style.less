@@ -1,0 +1,84 @@
+//compress: true;
+@import "vars";
+html{
+    scroll-behavior: smooth;
+    font-size: 15px;
+     animation-name: Appearance;
+    animation-duration: 1.0s;
+    animation-timing-function: cubic-bezier(.1, -.6, .2, 0);
+}
+body{
+        margin: 0;
+    font-size:1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: @black;
+    
+    } 
+.intro{
+  background-image: url(../img/fons.jpg);      
+  background-position: center center;      
+  background-repeat: no-repeat;      
+  background-attachment: scroll;      
+  background-size: cover;      
+  background-color: #464646; 
+    
+    
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/user";
+@import "blocks/nav";
+@import "blocks/intro";
+@import "blocks/social";
+@import "blocks/btn";
+@import "blocks/menu";
+@import "blocks/aboutme";
+@import "blocks/portfolio";
+@import "blocks/contact";
+@-webkit-keyframes Appearance {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes Appearance {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes Appearance {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes Appearance {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
